@@ -1,2 +1,3 @@
 /.env
 /todo-app.test
+/node_modules
