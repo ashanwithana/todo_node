@@ -18,3 +18,17 @@ Content-Type: application/json
   "username": "test@gmail.com",
   "password": "password"
 }
+
+### Get all todos
+
+GET http://localhost:8080/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MDc3MDU1LCJleHAiOjE3NDgxNjM0NTV9.IHAWgpoR3lKcGNwocPk0S_AElq5Emrpurew8Ba9xxak
+
+### Create todo
+POST http://localhost:8080/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MDc3MDU1LCJleHAiOjE3NDgxNjM0NTV9.IHAWgpoR3lKcGNwocPk0S_AElq5Emrpurew8Ba9xxak
+Content-Type: application/json
+
+{
+  "title": "Buy groceries"
+}
