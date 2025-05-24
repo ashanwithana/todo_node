@@ -22,13 +22,26 @@ Content-Type: application/json
 ### Get all todos
 
 GET http://localhost:8080/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MDc3MDU1LCJleHAiOjE3NDgxNjM0NTV9.IHAWgpoR3lKcGNwocPk0S_AElq5Emrpurew8Ba9xxak
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MTE2NjgxLCJleHAiOjE3NDgyMDMwODF9.6Ibs6wGcpsbqmS97GAHZgO-WaFp9ZrniGfZE_rVdSWU
 
 ### Create todo
 POST http://localhost:8080/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MDc3MDU1LCJleHAiOjE3NDgxNjM0NTV9.IHAWgpoR3lKcGNwocPk0S_AElq5Emrpurew8Ba9xxak
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MTE2NjgxLCJleHAiOjE3NDgyMDMwODF9.6Ibs6wGcpsbqmS97GAHZgO-WaFp9ZrniGfZE_rVdSWU
 Content-Type: application/json
 
 {
-  "title": "Buy groceries"
+  "task": "Buy groceries"
 }
+
+### Update todo
+PUT http://localhost:8080/todos/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MTE2NjgxLCJleHAiOjE3NDgyMDMwODF9.6Ibs6wGcpsbqmS97GAHZgO-WaFp9ZrniGfZE_rVdSWU
+Content-Type: application/json
+
+{
+  "completed": 1
+}
+
+### Delete todo 
+DELETE http://localhost:8080/todos/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MTE2NjgxLCJleHAiOjE3NDgyMDMwODF9.6Ibs6wGcpsbqmS97GAHZgO-WaFp9ZrniGfZE_rVdSWU
